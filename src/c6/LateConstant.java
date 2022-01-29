@@ -1,12 +1,14 @@
 package c6;
 
+import java.util.Scanner;
+
 public class LateConstant {
 
   public static final int HUBBLE;
   public final String ISBN;
 
   static {
-    try (java.util.Scanner scanner = new java.util.Scanner(
+    try (Scanner scanner = new Scanner(
       LateConstant.class.getResourceAsStream("../resources/Constant.txt"))) {
       HUBBLE = scanner.nextInt();
     }
