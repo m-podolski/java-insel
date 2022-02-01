@@ -26,17 +26,17 @@ public record Location(double latitude, // Komponenten im Header
     this.longitude = longitude;
   }
 
-  public Location(Point2D point) {
-    this(point.y, point.x);
-  }
+//  public Location(Point2D point) {
+//    this(point.y, point.x);
+//  }
 
   public Location() {
     this(0, 0);
   }
 
-  public static Location fromPoint(Point2D point) {
-    return new Location(point.y, point.x);
-  }
+//  public static Location fromPoint(Point2D point) {
+//    return new Location(point.y, point.x);
+//  }
 
   Point2D.Double toPoint() {
     return new Point2D.Double(longitude, latitude);
