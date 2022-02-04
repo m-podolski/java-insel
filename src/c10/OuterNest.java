@@ -12,7 +12,7 @@ public class OuterNest {
   public class In2 {
 
     private void intern2() {
-      new In1().intern1w();
+      new In1().intern1();
     }
   }
 
